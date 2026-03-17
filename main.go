@@ -2,7 +2,6 @@ package main
 
 func main() {
 	//\\//\\//\\ PRELIMINARY //\\//\\//\\
-
 	// first()
 	// banger()
 	// constants()
@@ -16,7 +15,16 @@ func main() {
 	// greeting()
 	// forStatements()
 	// multiplicationTable()
-	loopOnSlice()
+	// loopOnSlice()
 
 	//\\//\\//\\ PRELIMINARY PROJECTS //\\//\\//\\
+	// luckyNumberV0()
+	// luckyNumberV1()
+	// luckyNumberV2()
+	// luckyNumberV3()
+	// wordFinderV0()
+	// wordFinderV1()
+	// wordFinderV2()
+	// wordFinderV3()
+	// gotoLoop()
 }
