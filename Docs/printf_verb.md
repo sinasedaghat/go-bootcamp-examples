@@ -5,6 +5,7 @@ All of verbs are type-safe in `fmt.Printf()`
 ```go
 fmt.Printf("%v", "string") // string
 fmt.Printf("%v", 32) // 32
+fmt.Printf("%#v", [4]string{}) // [4]string{"", "", "", ""} (show array type and values)
 ```
 - `%q`: quote 
 ```go

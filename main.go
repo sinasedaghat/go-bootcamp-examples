@@ -27,4 +27,16 @@ func main() {
 	// wordFinderV2()
 	// wordFinderV3()
 	// gotoLoop()
+
+	//\\//\\//\\ ARRAYS //\\//\\//\\
+	// startArr()
+	// bookstore()
+	// moodlyV0()
+	// compareArrV0()
+	// assignArr()
+	// multiDimensionArr()
+	// moodlyV1()
+	// keyedElementsV0()
+	// cryptoExchangeRatios()
+	// compareArrV1()
 }
