@@ -1,9 +1,24 @@
 package main
 
 func main() {
+	//\\//\\//\\ 5.SLICES //\\//\\//\\
+	// startSlice()
+	// compareSlice()
+	// generateUnixNumber()
+	// appendSlice()
+	// sliceExpressionsV0()
+	// sliceExpressionsV1()
+	// pagination()
+	// backingArray()
+	// capacitySlice()
+	// fullSliceExpressions()
+	// makeFunction()
+	// copyFunction()
+	multiDimensionSlice()
+
 	//\\//\\//\\ 4.ARRAYS PROJECTS //\\//\\//\\
 	// retroClock()
-	clock()
+	// clock()
 
 	//\\//\\//\\ 3.ARRAYS //\\//\\//\\
 	// startArr()

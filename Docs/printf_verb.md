@@ -59,12 +59,21 @@ fmt.Printf("%t", true) // true
 var speed int
 fmt.Printf("%T", speed) // int
 ```
+- `%p`: pointer
+```go
+x := 10
+fmt.Printf("%p", &x) // 0xc000018090
+```
 - `%[x]anyVerb`: xth value (Argument index)
 ```go
 fmt.Printf(
   "%[1]v is %d away. Think! %[2]d kms! %[1]s OMG!",
   "Venus", 261,
 ) // Venus is 261 away. Think! 261 kms! Venus OMG!
+```
+- `%%`: show % sign
+```go
+fmt.Printf("%v%%", 24) // 24%
 ```
 
 ## Escape Sequences
@@ -75,4 +84,8 @@ fmt.Printf("Hi\nHi")
   Hi
   Hi
 */
+```
+- `\t`: use for printing horizontal tab
+```go
+fmt.Print("Age:\t30") // Age:	  30
 ```
