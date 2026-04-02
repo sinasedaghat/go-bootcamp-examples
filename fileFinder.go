@@ -38,7 +38,11 @@ func monitorDir() {
 		return
 	}
 
-	entries, _ := os.ReadDir(args[0])
+	entries, err := os.ReadDir(args[0])
+	if err != nil {
+		fmt.Println("Err:", err)
+		return
+	}
 	var dirs [2]int
 	var files [2]int
 
@@ -80,7 +84,13 @@ func monitorDir() {
 		fmt.Println("Err:", err)
 		return
 	}
-	writeFile([]byte(t), d, f)
+
+	err = writeFile([]byte(t), d, f)
+	if err != nil {
+		fmt.Println("Err: ", err)
+	} else {
+		fmt.Println("\"output.txt\" WAS CREATED")
+	}
 }
 
 func title(dc, fc int, dir string) (string, error) {
@@ -99,7 +109,7 @@ func title(dc, fc int, dir string) (string, error) {
 	), nil
 }
 
-func writeFile(t, d, f []byte) {
+func writeFile(t, d, f []byte) error {
 	data := make([]byte, 0, len(t)+len(d)+len(f)+34)
 	data = append(data, t...)
 	data = append(data, "\n\nDirectories names:\n"...)
@@ -107,10 +117,5 @@ func writeFile(t, d, f []byte) {
 	data = append(data, "\nFiles names:\n"...)
 	data = append(data, f...)
 
-	err := os.WriteFile("output.txt", data, 0644)
-	if err != nil {
-		fmt.Println("Err: ", err)
-	} else {
-		fmt.Println("\"output.txt\" WAS CREATED")
-	}
+	return os.WriteFile("output.txt", data, 0644)
 }
