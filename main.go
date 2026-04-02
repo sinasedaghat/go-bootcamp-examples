@@ -1,6 +1,9 @@
 package main
 
 func main() {
+	//\\//\\//\\ 6.FILE FINDER PROJECT //\\//\\//\\
+	monitorDir()
+
 	//\\//\\//\\ 5.SLICES //\\//\\//\\
 	// startSlice()
 	// compareSlice()
@@ -14,9 +17,9 @@ func main() {
 	// fullSliceExpressions()
 	// makeFunction()
 	// copyFunction()
-	multiDimensionSlice()
+	// multiDimensionSlice()
 
-	//\\//\\//\\ 4.ARRAYS PROJECTS //\\//\\//\\
+	//\\//\\//\\ 4.RETRO CLOCK PROJECTS //\\//\\//\\
 	// retroClock()
 	// clock()
 
