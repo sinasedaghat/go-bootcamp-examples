@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"time"
+
+	"github.com/inancgumus/screen"
 )
 
 // VERSION 1
@@ -128,7 +130,9 @@ func now() ([8]placeholder, int) {
 }
 
 func clock() {
+	screen.Clear()
 	for {
+		screen.MoveTopLeft()
 		now, sec := now()
 		for r := range len(digits[0]) {
 			for _, digit := range now {
@@ -229,7 +233,9 @@ var (
 )
 
 func retroClock() {
+	screen.Clear()
 	for {
+		screen.MoveTopLeft()
 		_createClock()
 		time.Sleep(time.Second)
 	}
