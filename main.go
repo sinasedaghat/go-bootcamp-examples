@@ -1,8 +1,12 @@
 package main
 
 func main() {
+	//\\//\\//\\ 7.BOUNCING BALL PROJECT //\\//\\//\\
+	// bouncingBallV0()
+	bouncingBallV1()
+
 	//\\//\\//\\ 6.FILE FINDER PROJECT //\\//\\//\\
-	monitorDir()
+	// monitorDir()
 
 	//\\//\\//\\ 5.SLICES //\\//\\//\\
 	// startSlice()
