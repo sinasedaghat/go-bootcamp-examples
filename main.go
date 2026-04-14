@@ -1,9 +1,19 @@
 package main
 
 func main() {
+	//\\//\\//\\ 8.SPAM MASKER PROJECT //\\//\\//\\
+
+	//\\//\\//\\ 8.STRINGS & RUNES //\\//\\//\\
+	// runeDetails()
+	// runeLoop()
+	// convertStrings()
+	// runeDecoding()
+	// upperRune()
+	// stringHeader()
+
 	//\\//\\//\\ 7.BOUNCING BALL PROJECT //\\//\\//\\
 	// bouncingBallV0()
-	bouncingBallV1()
+	// bouncingBallV1()
 
 	//\\//\\//\\ 6.FILE FINDER PROJECT //\\//\\//\\
 	// monitorDir()

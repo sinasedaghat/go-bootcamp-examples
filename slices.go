@@ -252,6 +252,7 @@ func pagination() {
 }
 
 func backingArray() {
+	fmt.Println("⚠️ all pointer recommended pointer of slice in this function not valid for this duty we was use `unsafe.SliceData(slice)` to read pointer value in `sliceHeader`")
 	ba := [...]int{22, 44, 77, 11, 88, 33, 66, 99}
 
 	s1 := ba[:]
