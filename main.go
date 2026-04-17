@@ -1,7 +1,10 @@
 package main
 
 func main() {
-	//\\//\\//\\ 8.SPAM MASKER PROJECT //\\//\\//\\
+	//\\//\\//\\ 8.SPAM MASKER & WRAPPER TEXT PROJECTS //\\//\\//\\
+	// masker()
+	// spamMasker()
+	wrapper()
 
 	//\\//\\//\\ 8.STRINGS & RUNES //\\//\\//\\
 	// runeDetails()
