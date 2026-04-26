@@ -1,10 +1,12 @@
 package main
 
 func main() {
+	//\\//\\//\\ 11.STRUCTS //\\//\\//\\
+
 	//\\//\\//\\ 10.INPUT SCANNING //\\//\\//\\
 	// lineCounter()
 	// wordFinder()
-	logParser()
+	// logParser()
 
 	//\\//\\//\\ 9.MAPS //\\//\\//\\
 	// startMaps()

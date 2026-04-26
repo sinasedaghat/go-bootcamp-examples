@@ -100,6 +100,10 @@ func logParser() {
 
 	printVisitTable(visitTableKeys, visitTable)
 	printErrorTable(errorTableKeys, errorTable)
+
+	if err := in.Err(); err != nil {
+		fmt.Println("Errors for Scanner:", err)
+	}
 }
 
 func lineParser(line string) (domain string, visit int, err error) {
