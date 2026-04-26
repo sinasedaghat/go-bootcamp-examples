@@ -1,5 +1,5 @@
 .DS_Store
 .vscode/**
 exercise_files/**
-output.txt
-sample.txt
+*.txt
+temp/**

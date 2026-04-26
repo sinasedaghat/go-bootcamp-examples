@@ -1,8 +1,13 @@
 package main
 
 func main() {
+	//\\//\\//\\ 10.INPUT SCANNING //\\//\\//\\
+	// lineCounter()
+	// wordFinder()
+	logParser()
+
 	//\\//\\//\\ 9.MAPS //\\//\\//\\
-	startMaps()
+	// startMaps()
 
 	//\\//\\//\\ 8.SPAM MASKER & WRAPPER TEXT PROJECTS //\\//\\//\\
 	// masker()
