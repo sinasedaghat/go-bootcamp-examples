@@ -2,6 +2,13 @@ package main
 
 func main() {
 	//\\//\\//\\ 11.STRUCTS //\\//\\//\\
+	// startStruct()
+	// assignStruct()
+	// bareNotBareTypes()
+	// embedStruct()
+	// logParserStructVersion()
+	// marshalStructs()
+	unmarshalJSONs()
 
 	//\\//\\//\\ 10.INPUT SCANNING //\\//\\//\\
 	// lineCounter()

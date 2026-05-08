@@ -6,6 +6,7 @@ All of verbs are type-safe in `fmt.Printf()`
 fmt.Printf("%v", "string")     // string
 fmt.Printf("%v", 32)           // 32
 fmt.Printf("%#v", [4]string{}) // [4]string{"", "", "", ""} (show array type and values)
+fmt.Printf("%+v", struct{field string}{field: "test"}) // {field:test} (for print structs, it adds field names before the values)
 ```
 - `%q`: quote 
 ```go
