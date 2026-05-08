@@ -51,17 +51,12 @@ func wordFinder() {
 	words := make(map[string]bool) // set data structure
 	wc := 0
 	for in.Scan() {
-
 		word := rx.ReplaceAllString(strings.ToLower(in.Text()), "")
 		if utf8.RuneCountInString(word) > 2 {
 			words[word] = true
 			wc++
 		}
 	}
-
-	// for k := range words {
-	// 	fmt.Println(k)
-	// }
 
 	fmt.Printf("\n\t\t\t✅Your reference text has %d word, and has %d specific word\n\n", wc, len(words))
 	if words[strings.ToLower(args[0])] {
