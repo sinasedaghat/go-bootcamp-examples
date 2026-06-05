@@ -1,6 +1,9 @@
 package main
 
 func main() {
+	//\\//\\//\\ 12.Function & Pointers //\\//\\//\\
+	pointerFunction()
+
 	//\\//\\//\\ 11.STRUCTS //\\//\\//\\
 	// startStruct()
 	// assignStruct()
@@ -8,7 +11,7 @@ func main() {
 	// embedStruct()
 	// logParserStructVersion()
 	// marshalStructs()
-	unmarshalJSONs()
+	// unmarshalJSONs()
 
 	//\\//\\//\\ 10.INPUT SCANNING //\\//\\//\\
 	// lineCounter()
