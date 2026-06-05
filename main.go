@@ -1,8 +1,13 @@
 package main
 
 func main() {
+	//\\//\\//\\ 13.Methods //\\//\\//\\
+	startMethods()
+	// checkPerformance()
+	// workWithLibrary()
+
 	//\\//\\//\\ 12.Function & Pointers //\\//\\//\\
-	pointerFunction()
+	// pointerFunction()
 
 	//\\//\\//\\ 11.STRUCTS //\\//\\//\\
 	// startStruct()
