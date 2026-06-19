@@ -3,28 +3,34 @@ package bookCity
 import "fmt"
 
 type Book struct {
-	Name  string
-	Price Price
+	Product
 }
 
-func (b Book) Print() {
-	fmt.Printf("%q is priced at %s.\n", b.Name, b.Price)
+func (b *Book) Print() {
+	fmt.Print("Book ")
+	b.Product.Print()
 }
 
 func newBooks() []Book {
 	holiday := Book{
-		Name:  "Fundamentals of Physics",
-		Price: 105.96,
+		Product{
+			Name:  "Fundamentals of Physics",
+			Price: 105.96,
+		},
 	}
 
 	aria := Book{
-		Name:  "Introduction to Classical Mechanics",
-		Price: 13.32,
+		Product{
+			Name:  "Introduction to Classical Mechanics",
+			Price: 13.32,
+		},
 	}
 
 	pathria := Book{
-		Name:  "Statistical Mechanics",
-		Price: 70.39,
+		Product{
+			Name:  "Statistical Mechanics",
+			Price: 70.39,
+		},
 	}
 
 	return []Book{

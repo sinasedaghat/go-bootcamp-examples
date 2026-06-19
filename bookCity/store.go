@@ -19,7 +19,7 @@ func Products() {
 	var products []Printer
 	products = make([]Printer, bl+gl)
 	for i := range bl {
-		products[i] = books[i]
+		products[i] = &books[i]
 	}
 	for i := range gl {
 		products[i+bl] = &games[i]
@@ -36,8 +36,10 @@ func shelf(p []Printer) {
 
 func Rebate() {
 	bob := Puzzle{
-		Name:  "Spongebob",
-		Price: 49.99,
+		Product: Product{
+			Name:  "Spongebob",
+			Price: 49.99,
+		},
 	}
 
 	var pBob Printer = &bob
@@ -48,8 +50,10 @@ func Rebate() {
 	}
 
 	holiday := Book{
-		Name:  "Fundamentals of Physics",
-		Price: 105.96,
+		Product{
+			Name:  "Fundamentals of Physics",
+			Price: 105.96,
+		},
 	}
 
 	var a any = holiday
@@ -63,15 +67,19 @@ func Rebate() {
 
 func PuzzleShelf() {
 	starryNight := Puzzle{
-		Name:  "The Starry Night",
-		Price: 59.99,
+		Product: Product{
+			Name:  "The Starry Night",
+			Price: 59.99,
+		},
 		Piece: "1000",
 	}
 
 	monaLisa := Puzzle{
-		Name:  "Mona Lisa",
-		Price: 39.99,
-		Piece: 500,
+		Product{
+			Name:  "Mona Lisa",
+			Price: 39.99,
+		},
+		500,
 	}
 
 	puzzles := [...]Puzzle{starryNight, monaLisa}
