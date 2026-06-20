@@ -1,8 +1,12 @@
 package main
 
 // import "bootcamp/bookCity"
+import "bootcamp/products"
 
 func main() {
+	//\\//\\//\\ 15.PRACTICE INTERFACES //\\//\\//\\
+	products.Store()
+
 	//\\//\\//\\ 14.INTERFACES //\\//\\//\\
 	// bookCity.Products()
 	// bookCity.Rebate()
