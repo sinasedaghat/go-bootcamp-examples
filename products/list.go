@@ -28,7 +28,7 @@ func (l list) Len() int {
 }
 
 func (l list) Less(i, j int) bool {
-	return l[i].title < l[j].title
+	return l[i].Title < l[j].Title
 }
 
 func (l list) Swap(i, j int) {
@@ -40,7 +40,7 @@ type byPrice struct {
 }
 
 func (bp byPrice) Less(i, j int) bool {
-	return bp.list[i].price < bp.list[j].price
+	return bp.list[i].Price < bp.list[j].Price
 }
 
 func sortByPrice(l list) sort.Interface {

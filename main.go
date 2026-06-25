@@ -5,7 +5,9 @@ import "bootcamp/products"
 
 func main() {
 	//\\//\\//\\ 15.PRACTICE INTERFACES //\\//\\//\\
-	products.Store()
+	// products.Store()
+	// products.MarshalInventoryStore()
+	products.UnmarshalInventoryStore()
 
 	//\\//\\//\\ 14.INTERFACES //\\//\\//\\
 	// bookCity.Products()
