@@ -1,11 +1,20 @@
 package products
 
+import (
+	"sort"
+	"strings"
+)
+
 type list []*product
 
-func (l list) print() {
+func (l list) String() string {
+	var str strings.Builder
 	for _, p := range l {
-		p.print()
+		str.WriteString("* ")
+		str.WriteString(p.String())
+		str.WriteRune('\n')
 	}
+	return str.String()
 }
 
 func (l list) discount(dp float64) {
@@ -14,13 +23,38 @@ func (l list) discount(dp float64) {
 	}
 }
 
-func Store() {
-	list := list{
-		{"Fundamentals of Physics", 104.99, toTimestamp(118281600)},
-		{"Introduction to Classical Mechanics", 13.32, toTimestamp("733622400")},
-		{title: "Statistical Mechanics", price: 70.39},
-	}
+func (l list) Len() int {
+	return len(l)
+}
 
-	list.discount(.5)
-	list.print()
+func (l list) Less(i, j int) bool {
+	return l[i].title < l[j].title
+}
+
+func (l list) Swap(i, j int) {
+	l[i], l[j] = l[j], l[i]
+}
+
+type byPrice struct {
+	list
+}
+
+func (bp byPrice) Less(i, j int) bool {
+	return bp.list[i].price < bp.list[j].price
+}
+
+func sortByPrice(l list) sort.Interface {
+	return &byPrice{l}
+}
+
+type reverse struct {
+	sort.Interface
+}
+
+func (r reverse) Less(i, j int) bool {
+	return r.Interface.Less(j, i)
+}
+
+func reverseSort(i sort.Interface) sort.Interface {
+	return reverse{i}
 }
